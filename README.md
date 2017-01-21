@@ -1,2 +1,2 @@
-# Sherminator-server
+# Sherminator
 thinkCube's Attendance Management System 
