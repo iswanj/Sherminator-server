@@ -15,4 +15,14 @@ const LeaveSchema = new Schema({
   }
 });
 
+LeaveSchema.static.changeApproval = (id, statusValue) => {
+  const Leave = mongoose.model("leave");
+
+  return Leave.findById(id)
+    .then(leave => {
+      leave.status = statusValue;
+      return leave.save();
+    });
+};
+
 mongoose.model("leave", LeaveSchema);
