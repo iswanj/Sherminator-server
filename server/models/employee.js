@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const EmployeeSchema = new Schema({
   firstName: { type: String },
   lastName: { type: String },
-  birthday: { type: String },
+  birthday: { type: Date },
   position: { type: String },
   epfNo: { type: Number },
   supervisor: {
@@ -14,7 +14,9 @@ const EmployeeSchema = new Schema({
   createdAt: { type: Date, default: Date.now },
   casualLeaves: { type: Number },
   annualLeaves: { type: Number },
-  sickLeaves: { type: Number }
+  sickLeaves: { type: Number },
+  email: { type: String },
+  password: { type: String, default: "abc123" }
 });
 
 mongoose.model("employee", EmployeeSchema);

@@ -21,7 +21,9 @@ const EmployeeType = new GraphQLObjectType({
     createdAt: { type: GraphQLString },
     casualLeaves: { type: GraphQLInt },
     annualLeaves: { type: GraphQLInt },
-    sickLeaves: { type: GraphQLInt }
+    sickLeaves: { type: GraphQLInt },
+    email: { type: GraphQLString },
+    password: { type: GraphQLString }
   })
 });
 
