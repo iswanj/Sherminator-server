@@ -11,15 +11,20 @@
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
     "express-session": "^1.15.6",
+    "global": "^4.3.2",
     "graphql": "^0.13.2",
     "mongoose": "^5.0.11",
-    "nodemon": "^1.17.2",
+    "nodemon": "^1.17.3",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
+    "babel-eslint": "7.x.x",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.46.2",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "5.x.x",
     "eslint-plugin-prettier": "^2.6.0",
     "prettier": "^1.11.1"
   }
